@@ -15,7 +15,7 @@ magic8ball.listOfAnswers = ["Seems promising.", "Signs point to no.", "Definatel
 
 var onClick = function() {
     var question = prompt("ASK A YES/NO QUESTION!");
-    magic8Ball.askQuestion(question);
+    magic8ball.askQuestion(question);
 
 };
 
