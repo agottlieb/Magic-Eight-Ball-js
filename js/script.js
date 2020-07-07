@@ -3,8 +3,9 @@ var magic8ball = {};
 magic8ball.listOfAnswers = ["Seems promising.", "Signs point to no.", "Definately yes.", "In your dreams.", "Indubitably."];
  $("#answer").hide ();
 
-  $("#answer").hide (); 
+  $("#answer").hide ();
  magic8ball.askQuestion =function (question) {
+   $("#answer").fadeIn(4000);
    var randomNumber = Math.random();
    var randomNumberForListOfAnswers = randomNumber * this.listOfAnswers.length;
    var randomIndex = Math.floor(randomNumberForListOfAnswers);
