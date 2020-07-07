@@ -20,7 +20,7 @@ magic8ball.listOfAnswers = ["Seems promising.", "Signs point to no.", "Definatel
 var onClick = function() {
     var question = prompt("ASK A YES/NO QUESTION!");
     magic8ball.askQuestion(question);
-
+    $("#8ball").effect( "shake" );
 };
 
 $("#questionButton").click( onClick );
