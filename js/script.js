@@ -18,25 +18,15 @@ magic8ball.listOfAnswers = ["Seems promising.", "Signs point to no.", "Definatel
      console.log(answer);
  };
 var onClick = function() {
+  $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
+  $("#answer").hide();
     setTimeout (
     function () {
       var question = prompt("ASK A YES/NO QUESTION!");
       magic8ball.askQuestion(question); }, 500);
-
 };
+
 $("#questionButton").click( onClick );
-  $("#answer").hide();
-
- $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
-
-/*//wait half a second before showing prompt
-   setTimeout(
-       function() {
-           //show prompt
-           var question = prompt("Ask a yes or no question")
-           magic8Ball.askQuestion(question)
-       }, 500);
-       */
 
 
 });
