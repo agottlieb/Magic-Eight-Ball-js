@@ -7,6 +7,7 @@ magic8ball.listOfAnswers = ["Seems promising.", "Signs point to no.", "Definatel
  magic8ball.askQuestion =function (question) {
    $("#answer").fadeIn(4000);
    $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");
+   $("#8ball").effect( "shake" );
    var randomNumber = Math.random();
    var randomNumberForListOfAnswers = randomNumber * this.listOfAnswers.length;
    var randomIndex = Math.floor(randomNumberForListOfAnswers);
@@ -21,9 +22,8 @@ var onClick = function() {
     function () {
       var question = prompt("ASK A YES/NO QUESTION!");
       magic8ball.askQuestion(question); }, 500);
-    $("#8ball").effect( "shake" );
 
-};                  
+};
 $("#questionButton").click( onClick );
   $("#answer").hide();
 
